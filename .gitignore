@@ -1,0 +1,45 @@
+# --- Python cache files ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Virtual environment folders ---
+venv/
+env/
+.venv/
+
+# --- Streamlit cache ---
+.streamlit/
+
+# --- Jupyter Notebook cache ---
+.ipynb_checkpoints/
+
+# --- IDE / Editor settings ---
+.vscode/
+.idea/
+
+# --- OS generated files ---
+.DS_Store
+Thumbs.db
+
+# --- Logs ---
+*.log
+
+# --- Large datasets (do not upload to GitHub) ---
+*.csv
+*.xlsx
+*.json
+*.zip
+
+# --- Model files (very large) ---
+*.pkl
+*.h5
+*.joblib
+
+# --- Environment files created automatically ---
+*.env
+.env*
+
+# --- Node modules (if any frontend uses JS) ---
+node_modules/

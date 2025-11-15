@@ -1,0 +1,209 @@
+/* ============================================================
+   AI Crime Analysis Dashboard Theme – Streamlit Compatible
+   ============================================================ */
+
+body {
+  border: 10px solid red !important;
+}
+
+:root {
+  --font-size: 16px;
+  --background: #ffffff;
+  --foreground: #171717;
+  --card: #ffffff;
+  --card-foreground: #171717;
+  --primary: #030213;
+  --primary-foreground: #ffffff;
+  --secondary: #f2f2f7;
+  --secondary-foreground: #030213;
+  --muted: #ececf0;
+  --muted-foreground: #717182;
+  --accent: #e9ebef;
+  --accent-foreground: #030213;
+  --destructive: #d4183d;
+  --destructive-foreground: #ffffff;
+  --border: rgba(0, 0, 0, 0.1);
+  --input-background: #f3f3f5;
+  --switch-background: #cbced4;
+  --chart-1: #f57c00;
+  --chart-2: #0288d1;
+  --chart-3: #3949ab;
+  --chart-4: #fbc02d;
+  --chart-5: #8bc34a;
+  --radius: 10px;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+}
+
+.dark {
+  --background: #171717;
+  --foreground: #f9f9f9;
+  --card: #202020;
+  --card-foreground: #f9f9f9;
+  --primary: #ffffff;
+  --primary-foreground: #202020;
+  --secondary: #2a2a2a;
+  --secondary-foreground: #f9f9f9;
+  --muted: #2a2a2a;
+  --muted-foreground: #aaaaaa;
+  --accent: #2a2a2a;
+  --accent-foreground: #ffffff;
+  --destructive: #b71c1c;
+  --destructive-foreground: #ffffff;
+  --border: #333333;
+  --input-background: #2c2c2c;
+  --switch-background: #444;
+  --chart-1: #7986cb;
+  --chart-2: #4fc3f7;
+  --chart-3: #aed581;
+  --chart-4: #ffb74d;
+  --chart-5: #e57373;
+}
+
+[data-testid="stAppViewContainer"] {
+  background-color: var(--background) !important;
+  color: var(--foreground) !important;
+  font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+  font-size: var(--font-size);
+}
+
+/* Streamlit-specific CSS Selectors */
+.main .block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Test border - should be visible if CSS loads */
+body {
+    border: 5px solid #00ff00 !important;
+}
+
+[data-testid="stAppViewContainer"] {
+    background-color: #f0f2f6 !important;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Header styling */
+h1, h2, h3 {
+    color: #030213;
+    font-weight: 600;
+}
+
+h1 {
+    border-bottom: 2px solid #030213;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem !important;
+}
+
+/* Button styling */
+.stButton>button {
+    background-color: #030213 !important;
+    color: white !important;
+    border-radius: 8px !important;
+    border: none !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.stButton>button:hover {
+    background-color: #1a1a2e !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Metric cards */
+[data-testid="metric-container"] {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    border-left: 4px solid #030213;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* File uploader */
+[data-testid="stFileUploader"] {
+    border: 2px dashed #030213 !important;
+    border-radius: 10px;
+    padding: 2rem;
+    background-color: rgba(3, 2, 19, 0.05);
+}
+
+/* Divider styling */
+.stDivider {
+    border-color: #030213 !important;
+    margin: 2rem 0 !important;
+}
+
+[data-testid="stVerticalBlock"] {
+  background-color: var(--card);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  padding: 1rem;
+}
+
+button, div.stButton > button {
+  background-color: var(--primary) !important;
+  color: var(--primary-foreground) !important;
+  border-radius: var(--radius) !important;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover, div.stButton > button:hover {
+  background-color: var(--accent);
+  color: var(--accent-foreground);
+}
+
+input, textarea, select {
+  background-color: var(--input-background);
+  color: var(--foreground);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  padding: 0.6em;
+  width: 100%;
+}
+
+section[data-testid="stFileUploader"] {
+  background-color: var(--muted);
+  border-radius: var(--radius);
+  padding: 1.2rem;
+  border: 1px dashed var(--border);
+}
+
+section[data-testid="stFileUploader"] > div {
+  text-align: center;
+}
+
+[data-testid="stMetricValue"] {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--primary);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--muted-foreground);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--foreground);
+}
+
+.dark-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: var(--switch-background);
+  color: var(--foreground);
+  border-radius: var(--radius);
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  font-weight: 500;
+}
