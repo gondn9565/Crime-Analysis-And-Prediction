@@ -144,5 +144,25 @@ We used **Random Forest Classifier** due to:
 
 ---
 
-## 📂 Suggested Project Structure
+## Project Folder Structure
+
+`Crime-Analysis-And-Prediction/
+│
+├─ backend/
+│ └─ app.py
+│
+├─ frontend/
+│ ├─ components/
+│ │ ├─ init.py
+│ │ ├─ alerts_panel.py
+│ │ ├─ charts_section.py
+│ │ ├─ dashboard.py
+│ │ ├─ data_upload_page.py
+│ │ ├─ footer.py
+│ │ ├─ header.py
+│ │ └─ metric_card.py
+│ └─ assets/
+│ └─ theme.js
+│
+└─ maincode.ipynb`
 
